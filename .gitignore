@@ -7,3 +7,5 @@ gnuplot_*.dat
 *.zip
 *.rar
 build/
+.DS_Store
+__MACOSX/
