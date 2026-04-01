@@ -1,0 +1,13 @@
+set grid;
+set xrange[0:1000];
+set yrange[0:2];
+set key box;
+set multiplot;
+set size 1,1;
+set origin 0.0 , 0.0;
+plot 'temps_de_calcul_LC.txt' using 1:2 title 'ListeChainee' with lines linecolor 'red';
+replot 'temps_de_calcul_Hash_Arbre.txt' using 1:2 title 'Hachage 128' with lines linecolor 'blue';
+replot 'temps_de_calcul_Hash_Arbre.txt' using 1:3 title 'Hachage 256' with lines linecolor 'purple';
+replot 'temps_de_calcul_Hash_Arbre.txt' using 1:4 title 'Hachage 512' with lines  linecolor 'black';
+replot 'temps_de_calcul_Hash_Arbre.txt' using 1:5 title 'ArbreQuat' with lines linecolor 'green';
+unset multiplot;

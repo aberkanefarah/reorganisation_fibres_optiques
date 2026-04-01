@@ -1,0 +1,9 @@
+*.o
+*.out
+*.exe
+vgcore.*
+.DS_Store
+gnuplot_*.dat
+*.zip
+*.rar
+build/

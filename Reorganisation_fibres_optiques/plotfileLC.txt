@@ -1,0 +1,9 @@
+set grid;
+set xrange[0:1000];
+set yrange[0:200];
+set key box;
+set multiplot;
+set size 1,1;
+set origin 0.0 , 0.0;
+plot 'temps_de_calcul_LC.txt' using 1:2 title 'ListeChainee' with lines;
+unset multiplot;
